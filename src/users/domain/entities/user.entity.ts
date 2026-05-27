@@ -16,19 +16,19 @@ export class UserEntity extends Entity<UserProps> {
     this.props.createdAt = this.props.createdAt ?? new Date();
   }
 
-  getName(): string {
+  get name(): string {
     return this.props.name;
   }
 
-  getEmail(): string {
+  get email(): string {
     return this.props.email;
   }
 
-  getPasswordHash(): string {
+  get passwordHash(): string {
     return this.props.passwordHash;
   }
 
-  getCreatedAt(): Date | undefined {
+  get createdAt(): Date | undefined {
     return this.props.createdAt;
   }
 }
